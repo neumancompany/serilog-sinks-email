@@ -34,15 +34,15 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
 
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net45' ">
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <DefineConstants>$(DefineConstants);SYSTEM_NET</DefineConstants>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
     <DefineConstants>$(DefineConstants);MAIL_KIT</DefineConstants>
   </PropertyGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
     <PackageReference Include="MailKit" Version="2.8.0" />
     <PackageReference Include="MimeKit" Version="2.9.1" />
     <!--<PackageReference Include="System.Linq" Version="4.1.0" />
